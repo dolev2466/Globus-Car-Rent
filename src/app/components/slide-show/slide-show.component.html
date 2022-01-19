@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="horizental-div">
+    <button class="slide-show-button" (click)="onPrev()"><</button>
+    <div
+      [ngStyle]="{
+        'background-image': 'url(' + image1 + ')',
+        'background-repeat': 'no-repeat',
+        'background-size': '100%'
+      }"
+      class="slide-show-img"
+    ></div>
+    <div
+      [ngStyle]="{
+        'background-image': 'url(' + image2 + ')',
+        'background-repeat': 'no-repeat',
+        'background-size': '100%'
+      }"
+      class="slide-show-img"
+    ></div>
+    <div
+      [ngStyle]="{
+        'background-image': 'url(' + image3 + ')',
+        'background-repeat': 'no-repeat',
+        'background-size': '100%'
+      }"
+      class="slide-show-img"
+    ></div>
+    <button class="slide-show-button" (click)="onNext()">></button>
+  </div>
+</div>

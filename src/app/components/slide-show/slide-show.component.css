@@ -1,0 +1,35 @@
+.container {
+  width: 100vw;
+  height: 300px;
+  display: flex;
+  background-color: black;
+}
+.horizental-div {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.slide-show-img {
+  display: flex;
+  height: 250px;
+  width: 400px;
+  margin: 5px;
+  display: flex;
+}
+.slide-show-button {
+  width: 25px;
+  height: 35px;
+  background-color: #d01345;
+  border: 2px;
+  border-color: #a30b34;
+  border-radius: 10%;
+  font-size: larger;
+  font-weight: lighter;
+  margin: 10px;
+}
+.slide-show-button:hover {
+  cursor: pointer;
+  background-color: #a30b34;
+}
