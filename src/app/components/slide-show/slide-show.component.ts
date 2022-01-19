@@ -12,6 +12,10 @@ export class SlideShowComponent implements OnInit {
     'assets/slideShow/Telsla.PNG',
     'assets/slideShow/Honda.PNG',
     'assets/slideShow/velosster.PNG',
+    'assets/slideShow/Jeep.PNG',
+    'assets/slideShow/Mazda.jpg',
+    'assets/slideShow/PIKI.JPG',
+    'assets/slideShow/i30.JPG',
   ];
   private _index: number = 2;
   image1: string = this._images[0];
