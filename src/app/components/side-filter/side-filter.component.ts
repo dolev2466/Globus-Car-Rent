@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-side-filter',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./side-filter.component.css'],
 })
 export class SideFilterComponent implements OnInit {
+  @Output() filterChanged: EventEmitter<{ id: string; filter: string }[]> =
+    new EventEmitter<{ id: string; filter: string }[]>();
   public isOpen: boolean = false;
   constructor() {}
 
@@ -13,5 +15,8 @@ export class SideFilterComponent implements OnInit {
 
   OnClick() {
     this.isOpen = !this.isOpen;
+  }
+  changeFilter(value: { id: string; filter: string }[]): void {
+    this.filterChanged.emit(value);
   }
 }

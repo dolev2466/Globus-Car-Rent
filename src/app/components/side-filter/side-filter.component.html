@@ -1,6 +1,7 @@
 <div [ngClass]="isOpen ? 'open-side-div' : 'close-side-div'">
   <img src="/assets/filterIcon.png" alt="img" (click)="OnClick()" />
   <app-filter-form
+    (changedFilter)="changeFilter($event)"
     [ngStyle]="{ visibility: isOpen ? 'visible' : 'hidden' }"
   ></app-filter-form>
 </div>

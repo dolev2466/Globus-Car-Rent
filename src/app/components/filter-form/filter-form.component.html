@@ -7,6 +7,7 @@
   <div class="horizntal-div">
     <label>year</label>
     <app-combobox
+      [optionsArray]="years"
       id="year"
       (filerChanged)="changeFilter({ id: 'year', filter: $event })"
     ></app-combobox>
@@ -14,12 +15,14 @@
   <div id="gearBox" class="horizntal-div">
     <label>gear box</label>
     <app-combobox
+      [optionsArray]="gears"
       (filerChanged)="changeFilter({ id: 'gear-box', filter: $event })"
     ></app-combobox>
   </div>
   <div id="company" class="horizntal-div">
     <label>company</label>
     <app-combobox
+      [optionsArray]="companies"
       (filerChanged)="changeFilter({ id: 'company', filter: $event })"
     ></app-combobox>
   </div>
@@ -29,5 +32,4 @@
       (filerChanged)="changeFilter({ id: 'model', filter: $event })"
     ></app-combobox>
   </div>
-  <button></button>
 </div>

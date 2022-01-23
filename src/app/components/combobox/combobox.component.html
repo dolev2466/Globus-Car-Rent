@@ -1,6 +1,10 @@
 <div class="combobox-div">
   <div class="horizental-div">
-    <label class="combobox-label">{{ checkedItems }}</label>
+    <label class="combobox-label">{{
+      countItems(checkedItems) > 3
+        ? countItems(checkedItems) + " itmes slected"
+        : checkedItems.substring(1)
+    }}</label>
     <fa-icon
       (click)="onclick()"
       [ngStyle]="{
@@ -17,35 +21,8 @@
     class="options-div"
   >
     <app-option
-      name="auto"
-      (CheckedChange)="CheckedChange($event)"
-    ></app-option>
-    <app-option
-      name="manual"
-      (CheckedChange)="CheckedChange($event)"
-    ></app-option>
-    <app-option
-      name="manual"
-      (CheckedChange)="CheckedChange($event)"
-    ></app-option>
-    <app-option
-      name="manual"
-      (CheckedChange)="CheckedChange($event)"
-    ></app-option>
-    <app-option
-      name="manual"
-      (CheckedChange)="CheckedChange($event)"
-    ></app-option>
-    <app-option
-      name="manual"
-      (CheckedChange)="CheckedChange($event)"
-    ></app-option>
-    <app-option
-      name="manual"
-      (CheckedChange)="CheckedChange($event)"
-    ></app-option>
-    <app-option
-      name="manual"
+      *ngFor="let option of optionsArray"
+      [name]="option"
       (CheckedChange)="CheckedChange($event)"
     ></app-option>
   </div>

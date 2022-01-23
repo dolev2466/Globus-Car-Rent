@@ -14,9 +14,12 @@
 }
 .combobox-label {
   display: flex;
+  align-items: center;
   height: 30px;
   width: 170px;
   background-color: rgb(73, 73, 75);
+  color: white;
+  font-size: 17px;
 }
 .options-div {
   display: flex;

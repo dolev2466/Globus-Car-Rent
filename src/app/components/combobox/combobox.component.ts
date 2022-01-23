@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import {
   faArrowAltCircleDown,
   faArrowAltCircleUp,
@@ -14,6 +14,7 @@ export class ComboboxComponent implements OnInit {
   public checkedItems: string = '';
   public faIcon = faArrowAltCircleDown;
   public isOpen: boolean = false;
+  @Input() optionsArray!: string[];
   @Output() filerChanged: EventEmitter<string> = new EventEmitter<string>();
   constructor() {}
 
@@ -34,5 +35,13 @@ export class ComboboxComponent implements OnInit {
       this.checkedItems = this.checkedItems.replace(',' + value.name, '');
     }
     this.filerChanged.emit(this.checkedItems);
+  }
+
+  countItems(str: string): number {
+    let count: number = 0;
+    for (let i = 0; i < str.length; i++) {
+      if (str[i] == ',') count++;
+    }
+    return count;
   }
 }

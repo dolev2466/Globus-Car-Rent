@@ -1,5 +1,5 @@
 <div class="horizntal-div">
-  <app-side-filter></app-side-filter>
+  <app-side-filter (filterChanged)="filterCars($event)"></app-side-filter>
   <div class="cards-div">
     <app-card *ngFor="let car of cars" [car]="car"></app-card>
   </div>
