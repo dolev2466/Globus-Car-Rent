@@ -1,0 +1,52 @@
+<div class="combobox-div">
+  <div class="horizental-div">
+    <label class="combobox-label">{{ checkedItems }}</label>
+    <fa-icon
+      (click)="onclick()"
+      [ngStyle]="{
+        cursor: 'pointer',
+        size: '4px',
+        'padding-left': '7px',
+        color: '#ffffff'
+      }"
+      [icon]="faIcon"
+    ></fa-icon>
+  </div>
+  <div
+    [ngStyle]="{ visibility: isOpen ? 'visible' : 'hidden' }"
+    class="options-div"
+  >
+    <app-option
+      name="auto"
+      (CheckedChange)="CheckedChange($event)"
+    ></app-option>
+    <app-option
+      name="manual"
+      (CheckedChange)="CheckedChange($event)"
+    ></app-option>
+    <app-option
+      name="manual"
+      (CheckedChange)="CheckedChange($event)"
+    ></app-option>
+    <app-option
+      name="manual"
+      (CheckedChange)="CheckedChange($event)"
+    ></app-option>
+    <app-option
+      name="manual"
+      (CheckedChange)="CheckedChange($event)"
+    ></app-option>
+    <app-option
+      name="manual"
+      (CheckedChange)="CheckedChange($event)"
+    ></app-option>
+    <app-option
+      name="manual"
+      (CheckedChange)="CheckedChange($event)"
+    ></app-option>
+    <app-option
+      name="manual"
+      (CheckedChange)="CheckedChange($event)"
+    ></app-option>
+  </div>
+</div>

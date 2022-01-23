@@ -1,0 +1,15 @@
+.nav-div {
+  display: flex;
+  width: 100vw;
+  height: 50px;
+  background-color: brown;
+  justify-content: space-between;
+}
+.buttons-div {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: blue;
+}
+p {
+  margin-left: 3px;
+}

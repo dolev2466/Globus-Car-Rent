@@ -1,0 +1,28 @@
+.combobox-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.horizental-div {
+  display: flex;
+  width: 200px;
+  height: 30px;
+  align-items: center;
+  background-color: rgb(37, 37, 37);
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.combobox-label {
+  display: flex;
+  height: 30px;
+  width: 170px;
+  background-color: rgb(73, 73, 75);
+}
+.options-div {
+  display: flex;
+  flex-direction: column;
+  max-height: 80px;
+  overflow-y: auto;
+  width: 198px;
+  background-color: rgb(73, 73, 75);
+}

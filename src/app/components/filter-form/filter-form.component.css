@@ -1,0 +1,40 @@
+.filter-div {
+  display: flex;
+  flex-direction: column;
+  width: 460px;
+  height: calc(100vh - 80px);
+  align-items: center;
+  border-color: #2d2d2d;
+  border-width: 1px;
+  border-radius: 5%;
+  border-style: groove;
+  justify-content: space-between;
+}
+.horizntal-div {
+  width: 400px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+label {
+  margin-right: 10px;
+  font-family: Baskerville, Times, "Times New Roman", serif;
+  color: #2d2d2d;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 2px;
+}
+h2 {
+  margin: 0;
+  margin-top: 17px;
+  color: #d01345;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+button {
+  width: 100px;
+  height: 40px;
+}

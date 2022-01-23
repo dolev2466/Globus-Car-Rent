@@ -1,0 +1,33 @@
+<div class="filter-div">
+  <div>
+    <p>___________</p>
+    <h2>FILTER</h2>
+    <p>___________</p>
+  </div>
+  <div class="horizntal-div">
+    <label>year</label>
+    <app-combobox
+      id="year"
+      (filerChanged)="changeFilter({ id: 'year', filter: $event })"
+    ></app-combobox>
+  </div>
+  <div id="gearBox" class="horizntal-div">
+    <label>gear box</label>
+    <app-combobox
+      (filerChanged)="changeFilter({ id: 'gear-box', filter: $event })"
+    ></app-combobox>
+  </div>
+  <div id="company" class="horizntal-div">
+    <label>company</label>
+    <app-combobox
+      (filerChanged)="changeFilter({ id: 'company', filter: $event })"
+    ></app-combobox>
+  </div>
+  <div id="model" class="horizntal-div">
+    <label>model</label>
+    <app-combobox
+      (filerChanged)="changeFilter({ id: 'model', filter: $event })"
+    ></app-combobox>
+  </div>
+  <button></button>
+</div>

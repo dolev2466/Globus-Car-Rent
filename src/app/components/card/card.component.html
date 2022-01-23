@@ -1,0 +1,15 @@
+<div class="card-div">
+  <img class="car-img" src="{{ car.img }}" alt="img" />
+  <h2>{{ car.company + " " + car.model }}</h2>
+  <div class="data-div">
+    <div class="icon-data-div">
+      <img class="icon" src="assets/year.png" alt="img" />
+      <label>{{ car.year }}</label>
+    </div>
+    <div class="icon-data-div">
+      <img class="icon" src="assets/gearbox.png" alt="img" />
+      <label>{{ car.gearBox }}</label>
+    </div>
+  </div>
+  <button class="rent-button">Rent Now For {{ car.price }}₪</button>
+</div>

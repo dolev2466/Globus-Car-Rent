@@ -1,0 +1,27 @@
+.link-div {
+  display: flex;
+  width: 100px;
+  height: 50px;
+  background-color: 2d2d2d;
+  align-items: center;
+  border-width: 0px;
+  margin-left: 30px;
+  justify-content: center;
+}
+.link-div:hover {
+  background-color: #d01345;
+  transform: skewY(-9deg);
+}
+label {
+  font-family: Baskerville, Times, "Times New Roman", serif;
+  font-size: 17px;
+  color: white;
+  cursor: pointer;
+}
+
+.link-button:visited {
+  text-decoration: none;
+}
+.link-button {
+  text-decoration: none;
+}

@@ -1,0 +1,18 @@
+.option-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 4px;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+}
+
+input {
+  zoom: 1.1;
+  cursor: pointer;
+}
+label {
+  cursor: pointer;
+  color: white;
+}

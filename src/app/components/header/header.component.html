@@ -1,3 +1,9 @@
 <div class="main-header-div">
   <a class="icon-link" href="/"></a>
+  <div class="links-div">
+    <app-header-button
+      *ngFor="let link of links"
+      [link]="link"
+    ></app-header-button>
+  </div>
 </div>

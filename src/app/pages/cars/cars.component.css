@@ -1,0 +1,11 @@
+.horizntal-div {
+  display: flex;
+  flex-direction: row;
+}
+.cards-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-height: calc(100vh - 60px);
+  overflow-y: auto;
+}
